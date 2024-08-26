@@ -6,5 +6,7 @@ import org.springframework.transaction.annotation.Transactional
 @Transactional
 @Service
 class OrderServiceImpl(
+    private val orderRepository: OrderRepository
+) : OrderService {
 
-) : OrderService
+}
